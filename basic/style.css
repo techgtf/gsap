@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 27px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+h1{font-size: 4vw; line-height: 8vh;}
+
+#box,
+#box1 {
+    background-color: rgb(184, 38, 67);
+    height: 200px;
+    width: 200px;
+}

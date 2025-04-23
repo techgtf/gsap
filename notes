@@ -1,0 +1,48 @@
+// ============= basic methods ================== //
+
+// 01) to ========================= //
+// to goes from initial positon to final 
+// e.g
+gsap.to("#box", {
+    x: 400,
+    duration: 2, // element will animate to the 2 sec
+    delay: 1 // element will start animating after 1  sec 
+})
+
+// 02) from ========================= //
+// from goes from final positon to initial  
+// e.g
+gsap.from("#box1", {
+    x: 400,
+    duration: 2, // element will animate to the 2 sec
+    delay: 1 // element will start animating after 1  sec 
+})
+
+
+// 03) stagger ========================= //
+// it apply one by by, suppose we have 5 elements and we want to apply some animation in a sequence like 1,2,3--n   
+// e.g
+
+{/* <h1>this is h1 for stagger</h1>
+<h1>this is also h1 for stagger</h1>
+<h1>this is again h1 for stagger</h1> */}
+gsap.from('h1', {
+    opacity: 0,
+    duration: 2,
+    delay: 1,
+    y: 30,
+    stagger: 0.3
+})
+
+
+// 03) repeat ========================= yoyo //
+// e.g
+
+gsap.from('#box2', {
+    x: 1300,
+    duration: 2,
+    delay: 1,
+    repeat: -1, // it will animate element again and again if value is -1 else we can set manually like 1,2,3 -- n
+    rotate: 360,
+    yoyo:true // it will animate final to initial or initial to final 
+})
