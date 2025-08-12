@@ -15,7 +15,6 @@ stringEl.addEventListener("mousemove", function (dets) {
     })
 })
 
-
 stringEl.addEventListener("mouseleave", function (e) {
     gsap.to("svg path", {
         attr: {
